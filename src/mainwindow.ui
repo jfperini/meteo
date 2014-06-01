@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Meteo V 1.0.2</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="meteo.qrc">
+    <normaloff>:/newPrefix/ico.png</normaloff>:/newPrefix/ico.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(33, 48, 58);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>www.radit.org </string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>371</width>
+      <height>112</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Ciudad</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineCiudad">
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #000000;
+     border-radius:4px;
+     
+background-color: rgb(61, 140, 243);
+     min-width: 80px;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Madrid</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Estado</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="labelEstado">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Temperatura</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="labelTemperatura">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Humedad</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="labelHumedad">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(32, 39, 47);
+   border: 1px solid rgb(27, 128, 217);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="BtnActualizar">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Actualizar ahora</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+       </property>
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="meteo.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>BtnActualizar</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slot_Actualizar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>258</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_Actualizar()</slot>
+ </slots>
+</ui>

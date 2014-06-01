@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment[es]=Meteo es una utilidad que recopila datos meteorológicos.
+Comment=Meteo es una utilidad que recopila datos meteorológicos.
+Exec=meteo
+GenericName[es]=Meteo
+GenericName=Meteo
+Icon=/usr/share/pixmaps/meteo.svg
+Name[es]=Meteo
+Name=Meteo
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+Categories=AudioVideo;Player;Music;Multimedia;Qt;
